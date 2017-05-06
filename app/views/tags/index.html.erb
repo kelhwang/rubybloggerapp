@@ -1,0 +1,12 @@
+<h1>Tags</h1>
+<ul>
+	<% @tags.each do |tag| %>
+	<h3>
+	<li><%= link_to tag.name, tag_path(tag) %> 
+		<% if logged_in? %>
+		<%= link_to "[x]", tag_path(tag), method: :delete, class: 'article_commands'%>
+		<% end  %>
+	</li>
+	</h3>
+	<% end %>
+</ul>

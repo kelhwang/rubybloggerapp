@@ -1,0 +1,81 @@
+html,h1, h2, h3, h4, p,a, ul, li {
+  font-family: 'Helvetica Neue';
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
+  color: rgb(48, 57, 66);
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 25px 0 25px;
+}
+
+h2 {
+	font-size: 1.35em;
+}
+
+h3 {
+	font-size: 1.2em;
+	line-height: 1.725em;
+}
+
+h4 {
+	font-size: 1em;
+	line-height: 1.725em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #444;
+}
+
+li {
+	line-height: 1.725em;
+}
+
+#container {
+	max-width: 980px;
+	margin: auto;
+}
+
+#articles-list{
+	padding-bottom: 50px
+}
+.article_title {
+  font-size: .875em;
+  line-height: 1.725em;
+}
+
+.article_commands {
+	font-size: .6em;
+}
+
+#article-body {
+	padding-bottom: 50px;
+}
+
+.comment {
+	font-size: .875em;
+}
+
+.flash {
+	background-color: rgb(255, 242, 183);
+
+}
+
+.post-time {
+	font-size: 0.7em
+}
+
+#comment-details {
+	padding-bottom: 10px;
+}
+
+#comment-block {
+	padding-bottom: 50px
+}
+
+

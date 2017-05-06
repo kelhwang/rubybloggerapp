@@ -1,0 +1,29 @@
+<h1>All Articles</h1>
+<div id="articles-list">
+<% if logged_in? %>
+<%= link_to "New Article", new_article_path, class: 'new_article' %>
+<% end %>
+<table>
+  <tr>
+ 		<th>Title</th>
+ 		<th>Text</th>
+ 		
+ 	</tr>
+  <% @articles.each do |article| %>
+    <tr>
+      <td>
+      <%= link_to article.title, article_path(article), class: 'article_title', id: "article_#{article.id}" %></td>
+      <td><%= article.body %></td>
+      <% if logged_in? %>
+      <td>
+      <%= link_to "[edit]", edit_article_path(article), class: 'article_commands' %>
+      <%= link_to "[delete]", article_path(article), class: 'article_commands', method: :delete, data: {confirm: "Do you really want to delete?"} %>
+      <% end %>
+      </td>
+      
+		</tr>    
+  <% end %>
+</table>
+</div>
+
+<%= link_to "Tags", tags_path %>
